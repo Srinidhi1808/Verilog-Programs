@@ -1,0 +1,6 @@
+module full_subtractor(a,b,bin,difference,bout);
+input a,b,bin;
+output difference,bout;
+assign difference = a ^ b ^ bin;
+assign bout = (~a & b) | (~(a ^ b) & bin);
+endmodule
