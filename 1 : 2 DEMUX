@@ -1,0 +1,6 @@
+module demux(d,s,y0,y1);
+input d,s;
+output y0,y1;
+assign y0 = d & ~s;
+assign y1 = d & s;
+endmodule
